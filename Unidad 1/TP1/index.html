@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Trabajo Practico N1 - Seguro No Pagamos Cooperativa</title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="Cabezera">
+            <h1>"Seguro No Pagamos" Cooperativa</h1>
+            <p>Binvenidos al sitio de la Cooperativa! Utilice el formulario de abajo para pedir un presupuesto</p>
+        </div>
+        <div id="Cabezera">
+            <h3>Solicita una Consulta!</h3>
+            <form name="form_solicitar" onsubmit="return false">
+                <label>Nombre</label> <input name="nombre" type="text" />
+                <label>Apellido</label> <input name="apellido" type="text" /> <br />
+                <label>DNI</label> <input name="dni" type="text" /> <br />
+                <label>Email</label> <input name="mail" type="tel" /> <br />
+                <label>Teléfono</label> <input name="tel" type="text" /> <br />
+                <label>Tipo de Seguro</label> <br />
+                <select name="tipo" onchange="cambiarPrecio()" name="tipo">
+                    <option value="1">Básico</option>
+                    <option value="2">Intermedio</option>
+                    <option value="3">Premium</option>
+                </select>
+                <input name="tel" type="submit"> Solicitar Consulta</input>
+            </form>
+        </div>
+        <div id="Precio">
+            <h3>Precio Final del Seguro:</h3>
+            <p id="precio">$500</p>
+        </div>
+    </body>
+</html>
