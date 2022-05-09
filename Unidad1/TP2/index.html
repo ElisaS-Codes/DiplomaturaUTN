@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Trabajo Practico N2 - Calculadora</title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="Cabezera">
+            <h1>Calculadora</h1>
+            <p>no lei bien la consigna y cree la de abajo primero, la dejo porque bue, ya la hice y me gusta mas</p>
+        </div>
+        <div id="calc">
+            <input id="campo1" type="text" /> <br />
+            <input id="campo2" type="text" /> <br />
+            <button onclick="operar((n1,n2) => n1 + n2)" style="height: 50; width:50;">+</button>
+            <button onclick="operar((n1,n2) => n1 - n2)" style="height: 50; width:50;">-</button>
+            <button onclick="operar((n1,n2) => n1 / n2)" style="height: 50; width:50;">/</button>
+            <button onclick="operar((n1,n2) => n1 * n2)" style="height: 50; width:50;">*</button>
+            <p id="resultado" style="background-color: black; color:white;width: 205;font-size: 42;margin: 5;text-align: end;padding-top: 10;">0</p>
+        </div>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <div id="mala">
+            <p id="display" style="background-color: black; color:white;width: 205;font-size: 42;margin: 5;text-align: end;padding-top: 10;">0</p>
+            <table>
+                <tr>
+                    <td><button onclick="nuevoDigito(1)" style="height: 50; width:50;">1</button></td>
+                    <td><button onclick="nuevoDigito(2)" style="height: 50; width:50;">2</button></td>
+                    <td><button onclick="nuevoDigito(3)" style="height: 50; width:50;">3</button></td>
+                    <td><button onclick="clearDisplay()" style="height: 50; width:50;">CE</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="nuevoDigito(4)" style="height: 50; width:50;">4</button></td>
+                    <td><button onclick="nuevoDigito(5)" style="height: 50; width:50;">5</button></td>
+                    <td><button onclick="nuevoDigito(6)" style="height: 50; width:50;">6</button></td>
+                    <td><button onclick="opBoton('suma')" style="height: 50; width:50;">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="nuevoDigito(7)" style="height: 50; width:50;">7</button></td>
+                    <td><button onclick="nuevoDigito(8)" style="height: 50; width:50;">8</button></td>
+                    <td><button onclick="nuevoDigito(9)" style="height: 50; width:50;">9</button></td>
+                    <td><button onclick="opBoton('resta')" style="height: 50; width:50;">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="opBoton('divi')" style="height: 50; width:50;">/</button></td>
+                    <td><button onclick="nuevoDigito(0)" style="height: 50; width:50;">0</button></td>
+                    <td><button onclick="opBoton('multi')" style="height: 50; width:50;">*</button></td>
+                    <td><button onclick="opIgual()" style="height: 50; width:50;">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
